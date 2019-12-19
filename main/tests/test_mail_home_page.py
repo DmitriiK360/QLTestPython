@@ -2,7 +2,6 @@ from main.constants.properties import Properties
 from main.pages.mail_home_page import MailHomePage
 from main.pages.mail_page import MailPage
 
-
 def test_login_mail(browser):
     mail_home_page = MailHomePage(browser, Properties.URL_MAIL_RU)
     mail_home_page.open()
@@ -19,6 +18,7 @@ def test_login_mail(browser):
     assert mail_home_page.get_text_password() == Properties.PASSWORD_MAIL_RU
 
     mail_home_page.click_login_button()
+
 
 def test_send_email(browser):
     #set variables

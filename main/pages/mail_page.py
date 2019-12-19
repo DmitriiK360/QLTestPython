@@ -40,7 +40,7 @@ class MailPage(BasePage):
 
     def get_text_body_input(self):
         element = self.find_element(self.BODY_INPUT)
-        return element.text()
+        return element.text
 
     def click_send_email_button(self):
         element = self.find_element(self.SEND_EMAIL_BUTTON)
